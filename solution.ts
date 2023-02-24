@@ -1,4 +1,8 @@
-class UniqueCharFinder {
-    private stream: string[] = [];
-    private charCount: { [key: string]: number } = {};
-}
+public addChar(c: string) {
+        this.stream.push(c);
+        if (this.charCount[c]) {
+            this.charCount[c]++;
+        } else {
+            this.charCount[c] = 1;
+        }
+    }
